@@ -1,0 +1,11 @@
+type Query {
+    greeting(req: GraphqlRequest!): GraphqlResponse!
+}
+
+input GraphqlRequest {
+    message: String!
+}
+
+type GraphqlResponse {
+    message: String!
+}

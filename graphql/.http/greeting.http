@@ -1,0 +1,9 @@
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "variables": {
+    "msg": "hi"
+  },
+  "query": "query Greeting($msg: String!) { greeting(req: {message: $msg} ) { message }}"
+}
