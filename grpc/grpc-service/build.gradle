@@ -1,0 +1,18 @@
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+ext {
+    grpcStarterVersion = '5.0.0'
+}
+
+dependencies {
+    implementation(project(":grpc-common"))
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    implementation "io.github.lognet:grpc-spring-boot-starter:${grpcStarterVersion}"
+
+    implementation 'io.grpc:grpc-netty-shaded'
+    runtimeOnly 'io.grpc:grpc-services'
+}

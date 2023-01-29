@@ -1,0 +1,10 @@
+grpc:
+  greeting:
+    hostname: localhost
+    port: 6565
+
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+      path: /gui
