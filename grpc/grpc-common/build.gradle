@@ -1,26 +1,26 @@
-plugins {
-    id "com.google.protobuf" version "0.9.2"
-    id 'maven-publish'
-}
+apply plugin: 'com.google.protobuf'
+apply plugin: 'maven-publish'
 
 ext {
-    protoVersion = '3.21.12'
+    protoVersion = '3.24.4'
     jakartaAnnotationApiVersion = '1.3.5' // 2+ incompatible - generate javax
+//    jakartaAnnotationApiVersion = '2.1.1'
 }
 
 dependencies {
     implementation 'io.grpc:grpc-stub'
     implementation 'io.grpc:grpc-protobuf'
-    implementation "jakarta.annotation:jakarta.annotation-api:${jakartaAnnotationApiVersion}"
+    implementation "jakarta.annotation:jakarta.annotation-api:$jakartaAnnotationApiVersion"
 }
 
 protobuf {
     protoc {
-        artifact = "com.google.protobuf:protoc:${protoVersion}"
+        artifact = "com.google.protobuf:protoc:$protoVersion"
+//        artifact = "com.google.protobuf:protobuf-javac:${protoVersion}"
     }
     plugins {
         grpc {
-            artifact = "io.grpc:protoc-gen-grpc-java:${grpcVersion}"
+            artifact = "io.grpc:protoc-gen-grpc-java:$grpcVersion"
         }
     }
     generateProtoTasks {
