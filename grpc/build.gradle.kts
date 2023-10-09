@@ -4,36 +4,13 @@ plugins {
     id("com.gorylenko.gradle-git-properties") version "2.4.1" apply false
     id("io.github.lognet.grpc-spring-boot") version "5.1.5" apply false
     id("com.google.protobuf") version "0.9.4" apply false
+    id("java-lib")
+    id("grpc-libs")
 }
 
-val grpcVersion = "1.58.0"
-
 subprojects {
-    apply(plugin = ("java"))
-
-    configure<JavaPluginExtension> {
-        sourceCompatibility = JavaVersion.VERSION_21
-        targetCompatibility = JavaVersion.VERSION_21
-    }
-
+    apply(plugin = "java-lib")
+    apply(plugin = "grpc-libs")
     group = "vlaship.grpc"
-    version = "0.0.3-SNAPSHOT"
-
-    configurations {
-        "compileOnly" {
-            extendsFrom(configurations.named("annotationProcessor").get())
-        }
-    }
-
-    repositories {
-        mavenCentral()
-        mavenLocal()
-    }
-
-    dependencies {
-        "implementation"("io.grpc:grpc-stub:$grpcVersion")
-        "implementation"("io.grpc:grpc-protobuf:$grpcVersion")
-        "implementation"("io.grpc:grpc-netty-shaded:$grpcVersion")
-        "runtimeOnly"("io.grpc:grpc-services:$grpcVersion")
-    }
+    version = "0.0.4-SNAPSHOT"
 }
