@@ -8,3 +8,12 @@ spring:
     graphiql:
       enabled: true
       path: /gui
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+server:
+  port: 18081

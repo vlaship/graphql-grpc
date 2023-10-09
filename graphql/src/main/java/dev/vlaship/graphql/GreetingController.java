@@ -1,4 +1,4 @@
-package vlaship.graphql;
+package dev.vlaship.graphql;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -6,7 +6,7 @@ import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Controller;
-import vlaship.grpc.client.GreetingClient;
+import dev.vlaship.grpc.client.GreetingClient;
 
 @Slf4j
 @Controller

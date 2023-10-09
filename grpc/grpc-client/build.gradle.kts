@@ -1,8 +1,8 @@
 plugins {
     id("org.springframework.boot")
     id("io.spring.dependency-management")
-    id("publish")
-    id("lombok")
+    id("dev.vlaship.publish")
+    id("dev.vlaship.lombok")
 }
 
 dependencies {

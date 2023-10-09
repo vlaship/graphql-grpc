@@ -1,5 +1,5 @@
 plugins {
-    id("compile-only")
+    id("dev.vlaship.compile-only")
 }
 
 dependencies {

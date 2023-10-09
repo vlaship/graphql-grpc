@@ -1,8 +1,8 @@
-package vlaship.graphql;
+package dev.vlaship.graphql;
 
 import org.mapstruct.Mapper;
-import vlaship.grpc.client.ClientRequest;
-import vlaship.grpc.client.ClientResponse;
+import dev.vlaship.grpc.client.ClientRequest;
+import dev.vlaship.grpc.client.ClientResponse;
 
 @Mapper(componentModel = "spring")
 public interface ClientMapper {

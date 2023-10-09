@@ -1,12 +1,12 @@
-package vlaship.grpc.client;
+package dev.vlaship.grpc.client;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.lang.NonNull;
-import vlaship.grpc.common.GreetingRequest;
-import vlaship.grpc.common.GreetingServiceGrpc;
+import dev.vlaship.grpc.common.GreetingRequest;
+import dev.vlaship.grpc.common.GreetingServiceGrpc;
 
 @Slf4j
 @RequiredArgsConstructor

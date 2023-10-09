@@ -1,1 +1,1 @@
-vlaship.grpc.client.autoconfigure.GreetingClientAutoConfiguration
+dev.vlaship.grpc.client.autoconfigure.GreetingClientAutoConfiguration

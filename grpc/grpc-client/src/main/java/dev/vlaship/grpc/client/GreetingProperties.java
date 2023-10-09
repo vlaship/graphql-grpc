@@ -1,4 +1,4 @@
-package vlaship.grpc.client;
+package dev.vlaship.grpc.client;
 
 import lombok.Getter;
 import lombok.Setter;

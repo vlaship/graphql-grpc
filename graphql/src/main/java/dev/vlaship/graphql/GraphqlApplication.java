@@ -1,4 +1,4 @@
-package vlaship.graphql;
+package dev.vlaship.graphql;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

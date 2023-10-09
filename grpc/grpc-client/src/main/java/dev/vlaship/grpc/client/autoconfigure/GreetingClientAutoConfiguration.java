@@ -1,12 +1,12 @@
-package vlaship.grpc.client.autoconfigure;
+package dev.vlaship.grpc.client.autoconfigure;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import vlaship.grpc.client.GreetingClient;
-import vlaship.grpc.client.GreetingProperties;
+import dev.vlaship.grpc.client.GreetingClient;
+import dev.vlaship.grpc.client.GreetingProperties;
 
 @AutoConfiguration
 @RequiredArgsConstructor

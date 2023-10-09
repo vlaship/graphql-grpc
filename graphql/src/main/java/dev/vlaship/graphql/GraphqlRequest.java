@@ -1,4 +1,4 @@
-package vlaship.graphql;
+package dev.vlaship.graphql;
 
 public record GraphqlRequest(String message) {
 }

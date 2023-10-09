@@ -2,7 +2,7 @@ import com.google.protobuf.gradle.*
 
 plugins {
     id("com.google.protobuf")
-    id("publish")
+    id("dev.vlaship.publish")
 }
 
 val jakartaAnnotationApiVersion = "1.3.5" // 2+ incompatible - generate javax

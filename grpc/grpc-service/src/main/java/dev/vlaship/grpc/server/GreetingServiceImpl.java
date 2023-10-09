@@ -1,9 +1,9 @@
-package vlaship.grpc.server;
+package dev.vlaship.grpc.server;
 
 import lombok.extern.slf4j.Slf4j;
-import vlaship.grpc.common.GreetingRequest;
-import vlaship.grpc.common.GreetingResponse;
-import vlaship.grpc.common.GreetingServiceGrpc;
+import dev.vlaship.grpc.common.GreetingRequest;
+import dev.vlaship.grpc.common.GreetingResponse;
+import dev.vlaship.grpc.common.GreetingServiceGrpc;
 import io.grpc.stub.StreamObserver;
 import org.lognet.springboot.grpc.GRpcService;
 

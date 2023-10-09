@@ -2,8 +2,9 @@
 grpcVersion = "1.58.0"
 grpcStarterVersion = "5.1.5"
 protocVersion = "3.24.4"
-snakeyamlVersion = "2.2"
 kotlinGradlePluginVersion = "1.9.10"
+snakeyamlVersion = "2.2"
+nettyVersion = "4.1.99.Final"
 
 [libraries]
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePluginVersion" }
@@ -12,4 +13,8 @@ kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", v
 grpc-starter = { module = "io.github.lognet:grpc-spring-boot-starter", version.ref = "grpcStarterVersion" }
 
 # misc
+netty = { module = "io.netty:netty-handler", version.ref = "nettyVersion" }
 snakeyaml = { module = "org.yaml:snakeyaml", version.ref = "snakeyamlVersion" }
+
+[plugins]
+git-properties = { id = "com.gorylenko.gradle-git-properties", version = "2.4.1" }
