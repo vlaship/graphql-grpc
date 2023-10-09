@@ -1,0 +1,13 @@
+[versions]
+grpcVersion = "1.58.0"
+kotlinGradlePluginVersion = "1.9.10"
+
+[libraries]
+#grps
+grpc-stub = { module = "io.grpc:grpc-stub", version.ref = "grpcVersion" }
+grpc-protobuf = { module = "io.grpc:grpc-protobuf", version.ref = "grpcVersion" }
+grpc-netty-shaded = { module = "io.grpc:grpc-netty-shaded", version.ref = "grpcVersion" }
+grpc-services = { module = "io.grpc:grpc-services", version.ref = "grpcVersion" }
+
+#kotlin
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePluginVersion" }

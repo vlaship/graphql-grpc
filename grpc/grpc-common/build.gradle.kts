@@ -5,8 +5,6 @@ plugins {
     id("publish")
 }
 
-val grpcVersion = "1.58.0"
-val protoVersion = "3.24.4"
 val jakartaAnnotationApiVersion = "1.3.5" // 2+ incompatible - generate javax
 // val =   jakartaAnnotationApiVersion = "2.1.1"
 
@@ -18,11 +16,11 @@ dependencies {
 
 protobuf {
     protoc {
-        artifact = "com.google.protobuf:protoc:$protoVersion"
+        artifact = "com.google.protobuf:protoc:${libs.versions.protocVersion.get()}"
     }
     plugins {
         id("grpc") {
-            artifact = "io.grpc:protoc-gen-grpc-java:$grpcVersion"
+            artifact = "io.grpc:protoc-gen-grpc-java:${libs.versions.grpcVersion.get()}"
         }
     }
     generateProtoTasks {

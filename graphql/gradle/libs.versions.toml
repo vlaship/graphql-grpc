@@ -1,0 +1,13 @@
+[versions]
+mapstructVersion = "1.5.5.Final"
+snakeyamlVersion = "2.2"
+nettyVersion = "4.1.99.Final"
+
+[libraries]
+snakeyaml = { module = "org.yaml:snakeyaml", version.ref = "snakeyamlVersion" }
+netty = { module = "io.netty:netty-handler", version.ref = "nettyVersion" }
+mapstruct = { module = "org.mapstruct:mapstruct", version.ref = "mapstructVersion" }
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstructVersion" }
+
+[plugins]
+git-properties = { id = "com.gorylenko.gradle-git-properties", version = "2.4.1" }
