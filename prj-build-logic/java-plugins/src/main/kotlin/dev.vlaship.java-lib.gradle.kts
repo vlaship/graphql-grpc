@@ -3,7 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.jvm")
 }
 
-val javaVersion = JavaVersion.VERSION_20
+val javaVersion = JavaVersion.VERSION_21
 
 java {
     sourceCompatibility = javaVersion

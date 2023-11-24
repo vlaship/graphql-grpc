@@ -1,6 +1,6 @@
 [versions]
 grpcVersion = "1.58.0"
-kotlinGradlePluginVersion = "1.9.10"
+kotlinGradlePluginVersion = "1.9.20"
 
 [libraries]
 #grps

@@ -1,4 +1,4 @@
-GRAPHQL http://localhost:8080/graphql
+GRAPHQL http://localhost:18081/graphql
 
 query Greeting($msg: String!) {
  greeting(req: {message: $msg} ) {
