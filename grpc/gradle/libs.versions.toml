@@ -2,7 +2,7 @@
 grpcVersion = "1.58.0"
 grpcStarterVersion = "5.1.5"
 protocVersion = "3.24.4"
-kotlinGradlePluginVersion = "1.9.10"
+kotlinGradlePluginVersion = "1.9.20"
 snakeyamlVersion = "2.2"
 nettyVersion = "4.1.99.Final"
 

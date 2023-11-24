@@ -3,8 +3,6 @@ rootProject.name = "graphql-service"
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        maven { url = uri("https://repo.spring.io/milestone") }
-        maven { url = uri("https://repo.spring.io/snapshot") }
     }
     includeBuild("../prj-build-logic")
 }
@@ -12,7 +10,7 @@ pluginManagement {
 dependencyResolutionManagement {
     repositories {
         mavenCentral()
-        mavenLocal()
+//        mavenLocal()
     }
-//    includeBuild("../grpc")
+    includeBuild("../grpc")
 }

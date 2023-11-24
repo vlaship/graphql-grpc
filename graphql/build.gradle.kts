@@ -1,15 +1,15 @@
 plugins {
-    id("org.springframework.boot") version "3.1.4"
-    id("io.spring.dependency-management") version "1.1.3"
+    id("org.springframework.boot") version "3.2.0"
+    id("io.spring.dependency-management") version "1.1.4"
     id("dev.vlaship.java-lib")
     id("dev.vlaship.lombok")
     alias(libs.plugins.git.properties)
 }
 
 group = "dev.vlaship.gql"
-version = "0.0.5-SNAPSHOT"
+version = "0.0.6-SNAPSHOT"
 
-val grpcClientVersion = "0.0.5-SNAPSHOT"
+val grpcClientVersion = "0.0.6-SNAPSHOT"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")

@@ -4,6 +4,9 @@ grpc:
     port: 6565
 
 spring:
+  threads:
+    virtual:
+      enabled: true
   graphql:
     graphiql:
       enabled: true
