@@ -6,7 +6,7 @@ plugins {
 }
 
 val jakartaAnnotationApiVersion = "1.3.5" // 2+ incompatible - generate javax
-// val =   jakartaAnnotationApiVersion = "2.1.1"
+//val jakartaAnnotationApiVersion = "2.1.1"
 
 dependencies {
     implementation("io.grpc:grpc-stub")

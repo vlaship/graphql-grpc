@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    val grpcVersion = "1.58.0"
+    val grpcVersion = "1.59.0"
     implementation("io.grpc:grpc-stub:$grpcVersion")
     implementation("io.grpc:grpc-protobuf:$grpcVersion")
     implementation("io.grpc:grpc-netty-shaded:$grpcVersion")

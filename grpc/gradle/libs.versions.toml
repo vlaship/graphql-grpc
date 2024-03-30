@@ -1,10 +1,10 @@
 [versions]
-grpcVersion = "1.58.0"
+grpcVersion = "1.59.0"
 grpcStarterVersion = "5.1.5"
-protocVersion = "3.24.4"
-kotlinGradlePluginVersion = "1.9.20"
+protocVersion = "3.25.1"
+kotlinGradlePluginVersion = "1.9.23"
 snakeyamlVersion = "2.2"
-nettyVersion = "4.1.99.Final"
+nettyVersion = "4.1.108.Final"
 
 [libraries]
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinGradlePluginVersion" }

@@ -1,7 +1,7 @@
 [versions]
 mapstructVersion = "1.5.5.Final"
 snakeyamlVersion = "2.2"
-nettyVersion = "4.1.99.Final"
+nettyVersion = "4.1.108.Final"
 
 [libraries]
 snakeyaml = { module = "org.yaml:snakeyaml", version.ref = "snakeyamlVersion" }

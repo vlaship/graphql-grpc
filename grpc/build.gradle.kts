@@ -1,5 +1,5 @@
 plugins {
-    id("org.springframework.boot") version "3.2.0" apply false
+    id("org.springframework.boot") version "3.2.4" apply false
     id("io.spring.dependency-management") version "1.1.4" apply false
     id("io.github.lognet.grpc-spring-boot") version "5.1.5" apply false
     id("com.google.protobuf") version "0.9.4" apply false
